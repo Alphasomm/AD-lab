@@ -8,6 +8,16 @@
   border: none;
   outline: none;
   font-family: "Poppins", serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", serif;
 }
 :root {
   --nav-bg-color: rgba(255, 255, 255, 0.1);
