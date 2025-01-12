@@ -244,6 +244,7 @@ a:hover .tooltip{
   height: 5rem;
   margin-top:2rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 .tab-list{
   display:flex;
@@ -255,6 +256,7 @@ a:hover .tooltip{
   border-bottom: .3rem solid var(--tab-list-color);
   color: var(--tab-list-color);
   transition: .5s;
+  justify-content: space-around;
 }
 .tab-list.resume-list.active{
   border-color:var(--main-color);
@@ -267,7 +269,10 @@ a:hover .tooltip{
 }
 
 .resume-list:nth-child(3){
-  justify-content: flex-end;
+  justify-content: center;
+}
+.resume-list:nth-child(4){
+  justify-content: center;
 }
 
 .tab-list h3{
@@ -345,4 +350,167 @@ a:hover .tooltip{
 }
 .resume-box.skills .resume-item:hover i{
   color: var(--main-color);
+}
+
+
+.contact{
+  padding-top: 2rem;
+  padding-bottom: 18rem;
+}
+
+.contact-wrapper{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70rem;
+}
+
+.contact-form h3{
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.contact-form .field-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-form .field-box input,
+.contact-form .field-box textarea{
+  display: inline-block;
+  width: 45%;
+  flex: 1 1 30rem;
+  padding: 2rem;
+  background: var(--third-bg-color);
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  color: var(--white-color);
+}
+
+.contact-form .field-box textarea{
+  height: 20rem;
+  resize: none;
+}
+
+.contact-form .contact-btn{
+  margin-top: 2rem;
+}
+
+.contact-form .contact-btn .btn{
+  cursor: pointer;
+}
+
+
+/* BREAKPOINTS */
+@media screen and (max-width: 1200px){
+  html{
+      font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .section{
+      padding: 0 4%;
+  }
+  .resume,
+  .portfolio{
+      padding-top: 1.5rem;
+      padding-bottom: 27rem;
+  }
+  .contact{
+      padding-top: 1.5rem;
+      padding-bottom: 18rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  html{
+      font-size: 50%;
+  }
+  .nav{
+      bottom: 0;
+  }
+  .home,
+  .about{
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+      padding-bottom: 6rem;
+  }
+  .about{
+      flex-direction: column;
+  }
+  .img-box{
+      width: 35rem;
+      height: 35rem;
+  }
+  .resume,
+  .portfolio{
+      padding-bottom: 25rem;
+  }
+  .contact{
+      padding-bottom: 16rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .resume,
+  .portfolio{
+      padding-top: 1rem;
+      padding-bottom: 22rem;
+  }
+  .tab-box{
+      margin-top: 0;
+  }
+  .contact{
+      padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .nav{
+      width: 100%;
+      border-radius: 0;
+  }
+  .home-info,
+  .about-info{
+      text-align: center;
+  }
+  .home-info h1{
+      font-size: 5rem;
+  }
+  .home-info .btn-sci{
+      flex-direction: column-reverse;
+  }
+  .home-info .btn-sci .sci{
+      margin-left: 0;
+      margin-bottom: 2rem;
+  }
+  .img-box{
+      width: 30rem;
+      height: 30rem;
+  }
+  .about-info .title{
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .img-box{
+      width: 25rem;
+      height: 25rem;
+  }
+  .tab-list h3{
+      font-size: 2.3rem;
+  }
 }
